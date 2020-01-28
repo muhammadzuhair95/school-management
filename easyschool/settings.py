@@ -144,12 +144,12 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_files', 'static_root')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media_files' 'media_root')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static_files' 'media_root')
 
 
 # Django_debug_toolbar settings
